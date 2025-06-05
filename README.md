@@ -1,6 +1,6 @@
 # KMS Activation Script
 
-Created by **ATik HaSan**
+Created by **[ATik HaSan](https://atikhasan.com)**
 
 [GitHub Repository](https://github.com/atikhasan392/kms.git)
 
@@ -8,38 +8,46 @@ Created by **ATik HaSan**
 
 ## Overview
 
-This repository contains a simple and effective KMS (Key Management Service) Activation script designed to help users activate Windows operating systems and Microsoft Office products quickly and easily. The script installs a product key, sets a custom KMS server, and activates the system using the Windows Software Licensing Management Tool (`slmgr`).
+This repository provides a lightweight, reliable KMS (Key Management Service) Activation script to quickly activate Windows operating systems and Microsoft Office products. The script automates the activation process by installing a product key, configuring a KMS server, and triggering the activation using Windows' built-in Software Licensing Management Tool (`slmgr`).
 
-This script is particularly useful for users who want to manually activate their Windows or Office licenses without going through the graphical interface. It automates the entire process in a few commands and works smoothly on supported Windows versions.
+It is ideal for users who prefer manual, command-line activation over graphical interfaces. The script is easy to use, requires minimal interaction, and works on supported Windows versions with KMS compatibility.
 
 ---
 
 ## Features
 
-- Simple and fast activation of Windows via KMS.
-- Ability to specify a custom KMS server for license verification.
-- Installs a product key and activates the system automatically.
-- Batch script format, which can be run easily on Windows.
-- Minimal user interaction required; fully automated.
+- Fast and straightforward Windows activation via KMS.  
+- Customizable KMS server configuration for license validation.  
+- Automated product key installation and activation steps.  
+- Simple batch script for easy execution on Windows.  
+- Minimal user input required, fully automated process.  
 
 ---
 
 ## How It Works
 
-The main commands used in the script are:
+The script uses the following key commands:
 
 - `slmgr /ipk <product-key>`  
-  Installs the specified product key into the system.
+  Installs the specified product key on the Windows system.
 
 - `slmgr /skms <kms-server>`  
-  Configures the KMS server address that Windows will contact for activation.
+  Sets the KMS server that Windows will use for activation requests.
 
 - `slmgr /ato`  
-  Attempts to activate Windows using the installed product key and configured KMS server.
+  Activates Windows by contacting the configured KMS server with the installed key.
+
+- `slmgr /xpr`  
+  Checks and displays the activation status of the Windows system.
 
 ---
 
-## Script Breakdown
+## Verify activation status
+```batch
+slmgr /xpr
+```
+
+## Script Example
 
 ```batch
 @echo off
