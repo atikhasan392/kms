@@ -2,7 +2,7 @@
 
 Created by **ATik HaSan**
 
-[GitHub Repository](https://github.com/atikhasan392/KMS-Activation.git)
+[GitHub Repository](https://github.com/atikhasan392/kms.git)
 
 ---
 
