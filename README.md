@@ -49,6 +49,17 @@ slmgr /xpr
 
 ## Script Example
 
+Windows 11 Home KMS
+```bash
+@echo off
+echo Created by ATik HaSan
+slmgr /ipk TX9XD-98N7V-6WMQ6-BX7FG-H8Q99
+slmgr /skms zh.us.to:1688
+slmgr /ato
+pause
+```
+
+Windows 11 Pro KMS
 ```batch
 @echo off
 echo Created by ATik HaSan
