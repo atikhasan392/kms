@@ -49,7 +49,7 @@ slmgr /xpr
 
 ## Script Example
 
-Windows 11 Home KMS
+Windows 11 Home GVLK
 ```bash
 @echo off
 echo Created by ATik HaSan
